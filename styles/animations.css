@@ -9,3 +9,24 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+/* Keyframes для сердца */
+@keyframes heart-bump {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+@keyframes sparks-appearance {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-bump 0.3s ease-in 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-appearance 0.3s ease-in 0.3s;
+}
+.like-icon { transform-origin: center; }
