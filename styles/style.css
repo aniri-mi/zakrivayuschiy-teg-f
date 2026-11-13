@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wght' var(--main-card-font-weight, 400);
+  font-variation-settings: "wght" var(--main-card-font-weight, 400);
   font-family: var(--main-font), sans-serif;
   background-attachment: fixed;
   background-image: var(--body-gradient);
@@ -32,7 +32,7 @@
   font-family: var(--accent-font);
   margin: clamp(50px, 10vw, 100px) auto;
   inline-size: var(--content-width);
- block-size: clamp(327px, calc(368 / 960 * 100dvh), 368px);
+  block-size: clamp(327px, calc(368 / 960 * 100dvh), 368px);
 }
 
 .header__logo {
@@ -58,9 +58,9 @@
 }
 
 .card__title {
-  font-variation-settings: 'wght' var(--card-title-font-weight, 700);
+  font-variation-settings: "wght" var(--card-title-font-weight, 700);
   font-size: 18px;
-  margin: 5px 10px ;
+  margin: 5px 10px;
 }
 
 .card__image-container {
@@ -74,8 +74,12 @@
   position: absolute;
   z-index: 2;
   inset-block-start: 25px;
-  inset-inline-end: calc(25/696*100%);
-  text-shadow: -1px 0 var(--label-stroke-color), 1px 0 var(--label-stroke-color), 0 -1px var(--label-stroke-color), 0  1px var(--label-stroke-color);
+  inset-inline-end: calc(25 / 696 * 100%);
+  text-shadow:
+    -1px 0 var(--label-stroke-color),
+    1px 0 var(--label-stroke-color),
+    0 -1px var(--label-stroke-color),
+    0 1px var(--label-stroke-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
   font-family: var(--accent-font);
@@ -131,13 +135,13 @@
 
 .card__description {
   border-top: 2px solid black;
-  padding: 26px 25.85px 0 25px;
+  padding: 26px 25px 0 25px;
   font-size: 18px;
   line-height: 21px;
 }
 
 .card__description p:first-child {
-  margin-block-end: 27px;
+  margin-block-end: 24px;
 }
 
 .card__controls {
@@ -204,7 +208,7 @@
   display: grid;
   gap: 30px;
   border: 2px solid black;
-  inline-size: calc(353/1440 * 100vw);
+  inline-size: calc(353 / 1440 * 100vw);
   padding: 26px 30px;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -246,7 +250,8 @@
 @media (width <= 375px) {
   .header {
     inline-size: 100dvw;
-    block-size: calc(327/667 * 100dvh);
+    block-size: calc(327 / 667 * 100dvh);
+    margin-bottom: 100px;
   }
 
   .card {
@@ -259,11 +264,11 @@
   }
 
   .card:nth-child(7) .card__description {
-    padding: 26px 30px 0 25px;
+    padding: 26px 28px 0 25px;
   }
 
   .card__title {
-    margin: 4px 10px 6px 10px ;
+    margin: 4px 10px 6px 10px;
   }
 
   .footer {
@@ -280,7 +285,7 @@
   }
 
   .popup[open] {
-    inline-size: calc(337/375 * 100vw);
+    inline-size: calc(337 / 375 * 100vw);
     padding: 26px 42px;
   }
 }

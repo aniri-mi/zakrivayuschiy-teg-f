@@ -1,6 +1,6 @@
 :root {
-  --main-font: 'Inter';
-  --accent-font: 'PressStart2P';
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
   --main-card-font-weight: 400;
   --card-title-font-weight: 700;
   --content-width: clamp(320px, calc(700 / 1440 * 100vw), 700px);
@@ -10,8 +10,8 @@
   --heart-fill-color: #ff0000;
   --button-text-color: #fff;
   --button-icon-fill: #fff;
-  --body-gradient: 
-  repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --body-gradient:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 }
