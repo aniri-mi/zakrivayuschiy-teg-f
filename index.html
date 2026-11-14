@@ -26,7 +26,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;/HTML&gt;</span>
           <img
-            class="card__image first-image"
+            class="card__image image-blur"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
             loading="lazy"
@@ -76,7 +76,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -86,7 +86,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;/HTML&gt;</span>
           <img
-            class="card__image second-image"
+            class="card__image image-brightness"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -104,9 +104,14 @@
           </p>
         </div>
         <div class="card__controls">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Поставить лайк"
+          >
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -137,7 +142,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -147,7 +152,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;css&gt;</span>
           <img
-            class="card__image third-image"
+            class="card__image image-contrast"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -196,7 +201,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -206,7 +211,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;desigions&gt;</span>
           <img
-            class="card__image fourth-image"
+            class="card__image image-grayscale"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -257,7 +262,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -267,7 +272,7 @@
         <div class="card__image-container">
           <span class="card__logo">care</span>
           <img
-            class="card__image fifth-image"
+            class="card__image image-invert"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -319,7 +324,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -329,7 +334,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;support&gt;</span>
           <img
-            class="card__image sixth-image"
+            class="card__image image-saturate"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -378,7 +383,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -388,7 +393,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;lifes-style: none;&gt;</span>
           <img
-            class="card__image seventh-image"
+            class="card__image image-sepia"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -439,7 +444,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -449,7 +454,7 @@
         <div class="card__image-container">
           <span class="card__logo">&lt;experience&gt;</span>
           <img
-            class="card__image eighth-image"
+            class="card__image image-multi"
             src="./images/image.png"
             alt="Пиксель-арт фургон ночью"
           />
@@ -502,15 +507,15 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
     </main>
-    <footer class="footer">
+    <div class="footer">
       <button
-        class="button-save"
+        class="button-save button"
         type="button"
         onclick="window['popup-dialog'].showModal()"
       >
@@ -537,12 +542,12 @@
             <use href="./svg/save.svg#save-icon"></use>
           </svg>
           <p class="popup__text">
-            Вставьте<br />дискету,&nbsp;чтобы<br />продолжить
+            Вставьте дискету,чтобы продолжить
           </p>
         </div>
         <div class="popup__button-container">
           <button
-            class="popup__close-button"
+            class="popup__close-button button"
             type="button"
             onclick="window['popup-dialog'].close()"
           >
@@ -550,7 +555,7 @@
           </button>
         </div>
       </dialog>
-    </footer>
+    </div>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
