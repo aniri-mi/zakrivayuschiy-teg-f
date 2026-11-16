@@ -254,7 +254,6 @@
 }
 @media (width <= 375px) {
   .header {
-    inline-size: 100%;
     padding-block: 120px;
     margin-bottom: 100px;
   }
