@@ -3,7 +3,7 @@
   --accent-font: "PressStart2P", fantasy;
   --main-card-font-weight: 400;
   --card-title-font-weight: 785;
-  --content-width: clamp(320px, calc(700 / 1440 * 100vw), 700px);
+  --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --label-stroke-color: white;
   --accent-color: #000;
   --heart-contour-color: var(--accent-color);

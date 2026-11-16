@@ -37,7 +37,6 @@
 
 .header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  max-inline-size: 100%;
 }
 
 .header__title {
@@ -209,7 +208,7 @@
   display: grid;
   gap: 30px;
   border: 2px solid black;
-  inline-size: calc(353 / 1440 * 100vw);
+  inline-size: clamp(375px, calc(353 / 1440 * 100vw), 1400px);
   padding: 26px 30px;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -291,7 +290,7 @@
   }
 
   .popup[open] {
-    inline-size: calc(337 / 375 * 100vw);
+    inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
     padding: 26px 42px;
   }
 }
