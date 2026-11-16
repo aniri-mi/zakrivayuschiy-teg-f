@@ -37,6 +37,7 @@
 
 .header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  max-inline-size: 100%;
 }
 
 .header__title {
@@ -239,7 +240,9 @@
   inline-size: 100%;
   background-color: white;
 }
-
+.popup__close-button .button__text {
+  text-transform: uppercase;
+}
 .popup__button-container .button__text {
   line-height: 0.9;
   padding-block: 12.5px;
@@ -252,7 +255,7 @@
 }
 @media (width <= 375px) {
   .header {
-    inline-size: 100dvw;
+    inline-size: 100%;
     padding-block: 120px;
     margin-bottom: 100px;
   }
